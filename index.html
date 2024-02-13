@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Input Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="header">
+        Historique des indicateurs éducatifs au Maroc
+    </div>
+
+    <div id="input">
+        <input type="file" id="fileInput">
+        <select id="comboBox"></select>
+        <label for="chartType">Chart Type:</label>
+        <select id="chartType"></select>
+        <br>
+    </div>
+
+    <div id="chartContainer">
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <div id="coordinates"></div>
+
+    <div id="sidebar">
+        <label for="yearRange">Year Range: <span id="selectedYearRange">1971 - 2023</span></label>
+        <input type="text" id="yearRange" name="yearRange" />
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
